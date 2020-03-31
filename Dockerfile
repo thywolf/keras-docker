@@ -15,4 +15,4 @@ RUN pip3 install requests
 
 WORKDIR /srv/
 
-CMD ["python3 run.py"]
+CMD ["/usr/bin/python3 run.py"]
