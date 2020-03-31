@@ -9,7 +9,7 @@ RUN pip3 install setuptools
 RUN pip3 install wheel
 RUN pip3 install matplotlib
 RUN pip3 install pydot-ng
-RUN pip3 install tensorflow
+RUN pip3 install tensorflow==1.5.0
 RUN pip3 install keras
 RUN pip3 install requests
 
