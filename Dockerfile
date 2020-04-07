@@ -4,7 +4,8 @@ MAINTAINER thywolf@gmail.com
 ENV TZ=Europe/Warsaw
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt-get update -qq
-RUN apt-get install -y --fix-missing --no-install-recommends git python3 python3-pip python-numpy python-scipy python-matplotlib python-yaml libhdf5-serial-dev python-h5py graphviz
+RUN apt-get upgrade -qq
+RUN apt-get install -y --no-install-recommends git python3 python3-pip python-numpy python-scipy python-matplotlib python-yaml libhdf5-serial-dev python-h5py graphviz
 RUN pip3 install setuptools
 RUN pip3 install wheel
 RUN pip3 install matplotlib
